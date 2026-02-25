@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <title>Dine Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -14,9 +12,9 @@
 
 
 </head>
-<body>,
+<body>
 
-<div class="container">
+<div class="container-fluid p-0">
 
     <!-- HEADER -->
     <header class="header">
@@ -24,32 +22,33 @@
             <img src="images/logo1.png" alt="Dine@Home">
         </div>
 
-        <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-        <form class="d-flex" role="search">
-       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-       <button class="btn btn-outline-success" type="submit">Search</button>
-         </form>
-        </div>
-        </nav>
         <div class="header-item">
             <div class = "right">
-            <img src="images/Profile.png" alt="Profile">
-            <p>USER PROFILE</p>
+            <a href="userpage.html"> <img src="images/Profile.png" alt="Profile"> </a>
             </a>
         </div>
         </div>
     </header>
 
+    
     <!-- CUISINE TITLE -->
-    <h3 class="section-title">WHAT CUISINE ARE YOU CRAVING FOR?</h3>
+    <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid">
+             <div class="input-group">
+      <input type="text" class="form-control" placeholder="WHAT ARE YOU CRAVING?" aria-label="Username" aria-describedby="basic-addon1"/>
+      <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+  </form>
+</nav>
+      
 
     <!-- TOP PURPLE BAR -->
     <div class="purple-bar"></div>
 
-    <!-- BLUE BANNER -->
+    <!-- BLUE BANNER --> 
     <div class="blue-banner">
         So many different kinds to choose from!
+    </div>
     </div>
 
     <!-- CUISINE GRID -->
@@ -93,7 +92,7 @@
 </div>
 
 </body>
- <footer>
+ 
    <footer class="site-footer">
   <p class="footer-text">
     Copyright © 2026 Dine@Home
