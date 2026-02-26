@@ -20,23 +20,32 @@ body {
   padding-bottom: 60px;
 }
 
+
 /* ================= HEADER ================= */
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px;
   background: #fafafa;
   border-bottom: 3px solid #eee;
-  padding: 15px 20px;
+  padding: 10px 20px;
+}
+.header .navbar {
+  flex: 1;
 }
 
-.header * {
-  margin:0;
+.header .container-fluid {
+  padding: 0;
+}
+.header-item {
+  margin-left: auto;
+  
 }
 
 .header-item img {
-  height: 50px;
+  height: 90px;
+  cursor: pointer;
 }
 
 .header-item a {
@@ -45,7 +54,7 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 90px;
 }
 
 
@@ -212,7 +221,7 @@ body {
 
 .footer-text {
   color: #9e9e9e;
-  font-size: 10px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .social-icons {
@@ -239,5 +248,47 @@ body {
   color: #ffffff;
 }
 
+/* LOCATION & SEARCH INPUT HOVER EFFECT */
+
+.input-group .form-control {
+  transition: all 0.3s ease;
+  border: 2px solid #ddd;
+}
+
+.input-group .form-control:hover {
+  border-color: #6ec1e4;
+  box-shadow: 0 0 8px rgba(110, 193, 228, 0.4);
+}
+
+.input-group .form-control:focus {
+  border-color: #6ec1e4;
+  box-shadow: 0 0 10px rgba(110, 193, 228, 0.6);
+  outline: none;
+}
 
 
+/* ICON BUTTON HOVER */
+
+.input-group .input-group-text {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.input-group .input-group-text:hover {
+  background-color: #6ec1e4;
+  color: rgb(64, 61, 61);
+  border-color: #6ec1e4;
+}
+
+/* PROFILE IMAGE HOVER EFFECT */
+
+.header-item {
+    width: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.header-item:hover {
+    transform: scale(1.05);
+}
